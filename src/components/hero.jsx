@@ -56,20 +56,11 @@ export default function Hero() {
                         {/* Compelling Subtitle with Enhanced Typography */}
                         <div className="space-y-6">
                             <p className="text-2xl md:text-3xl font-light leading-relaxed text-shadow-lg" style={{ color: '#718096' }}>
-                                Get <span className="font-bold" style={{ color: '#2D3748' }}>pre-approved in 24 hours</span> with rates as low as{' '}
-                                <span className="inline-flex items-center px-4 py-2 text-white font-black rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 animate-glow" style={{ backgroundColor: '#8F182C' }}>
-                                    4.29%
-                                </span>
+                                Get <span className="font-bold" style={{ color: '#2D3748' }}>pre-approved in 24 hours</span> with competitive rates and expert guidance.
                             </p>
                             <p className="text-xl leading-relaxed max-w-xl font-medium" style={{ color: '#718096' }}>
                                 Professional guidance through every step. <strong style={{ color: '#2D3748' }}>Over 1,000 successful mortgages closed</strong> across the GTA.
                             </p>
-
-                            {/* Urgency Message */}
-                            <div className="inline-flex items-center gap-2 bg-orange-50 text-orange-700 px-4 py-2 rounded-full text-sm font-bold border border-orange-200 animate-pulse">
-                                <span>🔥</span>
-                                <span>Only 3 pre-approval spots left this week!</span>
-                            </div>
                         </div>
 
                         {/* Contact Info Pills */}
@@ -131,72 +122,6 @@ export default function Hero() {
                                 <span>🚀</span>
                                 <span className="font-bold">1000+ Closed</span>
                             </div>
-                        </div>
-                    </div>
-
-                    {/* Right Column - Rate Card */}
-                    <div className="relative">
-                        {/* Floating Elements */}
-                        <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-yellow-200/50 to-orange-200/50 rounded-full opacity-40 blur-xl"></div>
-                        <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-blue-200/50 to-purple-200/50 rounded-full opacity-40 blur-xl"></div>
-
-                        <div className="relative bg-white/95 backdrop-blur-xl p-8 rounded-3xl shadow-2xl border border-white/50">
-                            {/* Header */}
-                            <div className="flex items-center justify-between mb-6">
-                                <h3 className="text-xl font-bold text-slate-900">Today's Best Rates</h3>
-                                <div className="flex items-center gap-2 bg-green-500 text-white px-3 py-1 rounded-full text-xs font-bold">
-                                    <div className="w-1.5 h-1.5 bg-white rounded-full animate-ping"></div>
-                                    LIVE
-                                </div>
-                            </div>
-
-                            {/* Rate Cards */}
-                            <div className="space-y-4 mb-6">
-                                <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-600">1-Year Fixed</p>
-                                        <p className="text-xs text-slate-500">APR*</p>
-                                    </div>
-                                    <div className="text-3xl font-black text-blue-600">5.09%</div>
-                                </div>
-
-                                <div className="relative flex items-center justify-between p-4 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl border-2 border-red-200 hover:border-red-300 transition-colors">
-                                    <div className="absolute -top-2 left-4">
-                                        <span className="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full">MOST POPULAR</span>
-                                    </div>
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-600">3-Year Fixed</p>
-                                        <p className="text-xs text-slate-500">APR*</p>
-                                        <p className="text-xs font-bold text-red-600 mt-1">Save $400+/month</p>
-                                    </div>
-                                    <div className="text-4xl font-black text-red-600">4.29%</div>
-                                </div>
-
-                                <div className="flex items-center justify-between p-4 bg-slate-50 rounded-xl hover:bg-slate-100 transition-colors">
-                                    <div>
-                                        <p className="text-sm font-semibold text-slate-600">5-Year Fixed</p>
-                                        <p className="text-xs text-slate-500">APR*</p>
-                                    </div>
-                                    <div className="text-3xl font-black text-purple-600">4.39%</div>
-                                </div>
-                            </div>
-
-                            {/* Premium CTA Button */}
-                            <button
-                                onClick={handleRateQuoteClick}
-                                className="group relative w-full py-5 btn-premium text-white font-black text-lg rounded-2xl shadow-2xl hover:shadow-3xl magnetic font-display overflow-hidden"
-                            >
-                                <span className="relative z-10 flex items-center justify-center gap-2">
-                                    <span>🚀 Get My Rate Quote - FREE</span>
-                                </span>
-
-                                {/* Shimmer Effect */}
-                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
-                            </button>
-
-                            <p className="text-xs text-slate-400 text-center mt-4 italic">
-                                *Best rates in Canada. Licensed M08005655
-                            </p>
                         </div>
                     </div>
                 </div>

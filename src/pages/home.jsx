@@ -1,12 +1,8 @@
 import Hero from "../components/hero";
 import StickyCTA from "../components/stickycta";
 import FloatingCTA from "../components/floatingcta";
-import LiveStats from "../components/livestats";
-import UrgencyBanner from "../components/urgencybanner";
 import TorontoMarketData from "../components/torontomarketdata";
 import ContactForm from "../components/contactform";
-import MortgageGuide from "../components/mortgageguide";
-import RateAlert from "../components/ratealert";
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
@@ -61,9 +57,6 @@ export default function Home() {
 
             {/* Premium Hero Section */}
             <Hero />
-
-            {/* Live Performance Dashboard */}
-            <LiveStats />
 
             {/* Toronto Market Data */}
             <TorontoMarketData />
@@ -389,110 +382,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* SPECTACULAR Calculator Section */}
-            <section className="mt-16 py-24 relative overflow-hidden">
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                    <img
-                        src="https://images.unsplash.com/photo-1554224154-26032fced8bd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-                        alt="Modern Toronto Cityscape"
-                        className="w-full h-full object-cover opacity-10"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-50/90 via-white/95 to-purple-50/90"></div>
-                </div>
-                <div className="absolute top-0 left-0 w-72 h-72 bg-gradient-to-br from-blue-200/20 to-purple-200/20 rounded-full blur-3xl"></div>
-                <div className="absolute bottom-0 right-0 w-72 h-72 bg-gradient-to-br from-pink-200/20 to-red-200/20 rounded-full blur-3xl"></div>
-
-                <div className="relative z-10 grid md:grid-cols-2 gap-12 items-center max-w-7xl mx-auto px-6">
-                    <div data-aos="fade-right">
-                        <h2 className="text-5xl font-black text-gray-900 mb-6">
-                            How Much Can You <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Afford?</span>
-                        </h2>
-                        <p className="text-lg text-gray-600 leading-relaxed mb-8">
-                            Try one of my easy to use mortgage calculators to quickly and easily see what you can afford.
-                            Run payment scenarios, figure out land transfer costs, closing costs and much more!
-                        </p>
-                        <a
-                            href="/calculators/affordability"
-                            className="group inline-flex items-center px-10 py-5 text-xl font-bold text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 transition-all duration-300"
-                        >
-                            <span className="flex items-center gap-3">
-                                <span>Start Calculating</span>
-                                <svg className="w-6 h-6 transform group-hover:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                                </svg>
-                            </span>
-                        </a>
-                        <div className="mt-6 grid grid-cols-1 sm:grid-cols-3 gap-4">
-                            <a href="/calculators/payment" className="text-center p-4 border border-gray-200 rounded-lg hover:border-red-300 transition-colors">
-                                <div className="text-2xl mb-2">🏠</div>
-                                <p className="text-sm font-medium text-gray-700">Payment Calculator</p>
-                            </a>
-                            <a href="/calculators/affordability" className="text-center p-4 border border-red-300 bg-red-50 rounded-lg">
-                                <div className="text-2xl mb-2">💰</div>
-                                <p className="text-sm font-medium text-red-700">Max Mortgage</p>
-                            </a>
-                            <a href="/calculators/rent-vs-buy" className="text-center p-4 border border-gray-200 rounded-lg hover:border-red-300 transition-colors">
-                                <div className="text-2xl mb-2">📊</div>
-                                <p className="text-sm font-medium text-gray-700">Rent vs Buy</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div className="flex justify-center">
-                        <div className="relative">
-                            {/* Phone mockup */}
-                            <div className="w-64 h-[520px] bg-gray-900 rounded-[3rem] p-2 shadow-2xl">
-                                <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
-                                    {/* Phone screen content */}
-                                    <div className="p-6 h-full flex flex-col">
-                                        <div className="text-center mb-6">
-                                            <h3 className="text-lg font-semibold text-gray-900">Maximum Mortgage Calculator</h3>
-                                            <p className="text-sm text-gray-600 mt-2">Calculate the maximum mortgage amount you qualify for based on your income. A great tool for buyers.</p>
-                                        </div>
-
-                                        <div className="space-y-4 flex-1">
-                                            <div>
-                                                <label className="block text-xs font-medium text-gray-700 mb-1">Annual Family Income</label>
-                                                <div className="bg-gray-100 rounded p-2 text-sm">$120,000</div>
-                                            </div>
-
-                                            <div>
-                                                <label className="block text-xs font-medium text-gray-700 mb-1">Annual Property Taxes (est.)</label>
-                                                <div className="bg-gray-100 rounded p-2 text-sm">$4,200</div>
-                                            </div>
-
-                                            <div>
-                                                <label className="block text-xs font-medium text-gray-700 mb-1">Monthly Heating Costs/Condo Fees (est.)</label>
-                                                <div className="bg-gray-100 rounded p-2 text-sm">$350</div>
-                                            </div>
-
-                                            <div>
-                                                <label className="block text-xs font-medium text-gray-700 mb-1">Min. Monthly Payments for Loans/Credit Cards</label>
-                                                <div className="bg-gray-100 rounded p-2 text-sm">$400</div>
-                                            </div>
-
-                                            <div>
-                                                <label className="block text-xs font-medium text-gray-700 mb-1">Monthly Recurring Financing Payment</label>
-                                                <div className="bg-gray-100 rounded p-2 text-sm">$0</div>
-                                            </div>
-
-                                            <div>
-                                                <label className="block text-xs font-medium text-gray-700 mb-1">Interest Rate</label>
-                                                <div className="bg-gray-100 rounded p-2 text-sm">4.39%</div>
-                                            </div>
-                                        </div>
-
-                                        <button className="w-full py-3 text-white font-semibold rounded-lg mt-4" style={{ backgroundColor: 'var(--primary)' }}>
-                                            Calculate
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             {/* SPECTACULAR Client Reviews */}
             <section className="mt-16 py-24 relative overflow-hidden">
                 {/* Premium Background with Toronto Skyline */}
@@ -756,101 +645,6 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Contact Options */}
-            <section className="mt-16 py-16">
-                <div className="max-w-4xl mx-auto px-6">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Get Started?</h2>
-                        <p className="text-lg text-gray-600">Multiple ways to connect - choose what works best for you</p>
-                    </div>
-
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <a href="tel:4162892224" className="group bg-white rounded-xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
-                            <div className="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">Call Direct</h3>
-                            <p className="text-gray-600 mb-3">(416) 289-2224</p>
-                            <p className="text-sm text-gray-500">Available 7 days a week</p>
-                        </a>
-
-                        <a href="/pre-approval" className="group bg-white rounded-xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
-                            <div className="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">Apply Online</h3>
-                            <p className="text-gray-600 mb-3">Get pre-approved in 24 hours</p>
-                            <p className="text-sm text-gray-500">Secure online application</p>
-                        </a>
-
-                        <a href="/book" className="group bg-white rounded-xl p-8 shadow-sm border border-gray-200 hover:shadow-lg transition-all duration-300 text-center">
-                            <div className="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                                <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3a1 1 0 011-1h6a1 1 0 011 1v4h3a1 1 0 011 1v8a1 1 0 01-1 1H5a1 1 0 01-1-1V8a1 1 0 011-1h3z" />
-                                </svg>
-                            </div>
-                            <h3 className="text-xl font-semibold text-gray-900 mb-2">Book a Call</h3>
-                            <p className="text-gray-600 mb-3">15-minute consultation</p>
-                            <p className="text-sm text-gray-500">Free strategy session</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-            {/* Latest Insights */}
-            <section className="mt-16">
-                <div className="text-center mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-4">Latest Market Insights</h2>
-                    <p className="text-lg text-gray-600">Stay informed with Anne's expert analysis and market updates</p>
-                </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <article className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
-                        <div className="p-6">
-                            <div className="text-xs text-blue-600 font-semibold mb-2">MARKET UPDATE</div>
-                            <h3 className="font-semibold text-gray-900 mb-2 leading-tight">Bank of Canada holds policy rate at 2.75%</h3>
-                            <p className="text-sm text-gray-600 mb-4">Understanding what this means for your mortgage renewal and new purchases.</p>
-                            <div className="flex items-center justify-between">
-                                <span className="text-xs text-gray-400">July 30, 2025</span>
-                                <button className="text-sm text-blue-600 font-medium hover:text-blue-700">Read More →</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
-                        <div className="p-6">
-                            <div className="text-xs text-green-600 font-semibold mb-2">FIRST-TIME BUYERS</div>
-                            <h3 className="font-semibold text-gray-900 mb-2 leading-tight">Double-Barrel Down Payments: FHSA + $60k HBP</h3>
-                            <p className="text-sm text-gray-600 mb-4">How to combine programs for up to $100k+ in down payment funding.</p>
-                            <div className="flex items-center justify-between">
-                                <span className="text-xs text-gray-400">July 9, 2025</span>
-                                <button className="text-sm text-blue-600 font-medium hover:text-blue-700">Read More →</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow">
-                        <div className="p-6">
-                            <div className="text-xs text-orange-600 font-semibold mb-2">RENEWALS</div>
-                            <h3 className="font-semibold text-gray-900 mb-2 leading-tight">Mortgage Payments Ease, Renewal Stress Grows</h3>
-                            <p className="text-sm text-gray-600 mb-4">What renewal clients need to know about the changing landscape.</p>
-                            <div className="flex items-center justify-between">
-                                <span className="text-xs text-gray-400">July 16, 2025</span>
-                                <button className="text-sm text-blue-600 font-medium hover:text-blue-700">Read More →</button>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            {/* Rate Alert Signup */}
-            <RateAlert />
-
-            {/* Free Mortgage Guides */}
-            <MortgageGuide />
 
             {/* Contact Form */}
             <ContactForm />
