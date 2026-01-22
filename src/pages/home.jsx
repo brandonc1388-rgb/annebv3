@@ -1,6 +1,7 @@
 import Hero from "../components/hero";
 import StickyCTA from "../components/stickycta";
 import FloatingCTA from "../components/floatingcta";
+import LiveStats from "../components/livestats";
 import TorontoMarketData from "../components/torontomarketdata";
 import ContactForm from "../components/contactform";
 import { useEffect } from 'react';
@@ -56,6 +57,9 @@ export default function Home() {
 
             {/* Premium Hero Section */}
             <Hero />
+
+            {/* Live Stats */}
+            <LiveStats />
 
             {/* Toronto Market Data */}
             <TorontoMarketData />

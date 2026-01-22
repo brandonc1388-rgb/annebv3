@@ -91,18 +91,9 @@ export default function TorontoMarketData() {
                 </div>
 
                 <div className="text-center mt-8" data-aos="fade-up" data-aos-delay="600">
-                    <p className="text-gray-600 text-sm mb-4">
+                    <p className="text-gray-600 text-sm">
                         Data updated daily • Source: Toronto Regional Real Estate Board
                     </p>
-                    <a
-                        href="/calculators/affordability"
-                        className="inline-flex items-center gap-2 text-red-600 font-bold hover:text-red-700 transition-colors"
-                    >
-                        <span>Calculate what you can afford in {selectedArea}</span>
-                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                        </svg>
-                    </a>
                 </div>
             </div>
         </section>

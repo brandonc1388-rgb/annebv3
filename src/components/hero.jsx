@@ -116,11 +116,11 @@ export default function Hero() {
                             </div>
                             <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-2 rounded-full border border-blue-200">
                                 <span>🏆</span>
-                                <span className="font-bold">Top 1% Broker</span>
+                                <span className="font-bold">Ontario's #1 Mortgage Brokers</span>
                             </div>
                             <div className="flex items-center gap-2 bg-purple-50 text-purple-700 px-3 py-2 rounded-full border border-purple-200">
-                                <span>🚀</span>
-                                <span className="font-bold">1000+ Closed</span>
+                                <span>🏦</span>
+                                <span className="font-bold">Lender Network of 100+</span>
                             </div>
                         </div>
                     </div>

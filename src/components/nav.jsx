@@ -30,19 +30,6 @@ export default function Nav() {
                 <nav className="hidden md:flex items-center gap-1">
                     <NavLink to="/" className={({ isActive }) => `${link} ${isActive ? active : ""}`} style={{ color: isActive => isActive ? '#8F182C' : '#718096' }}>Home</NavLink>
                     <NavLink to="/about" className={({ isActive }) => `${link} ${isActive ? active : ""}`} style={{ color: isActive => isActive ? '#8F182C' : '#718096' }}>About</NavLink>
-                    <div className="relative group">
-                        <button className={`${link} flex items-center gap-1`} style={{ color: '#718096' }}>
-                            Calculators
-                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                            </svg>
-                        </button>
-                        <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-xl border opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50" style={{ borderColor: '#E2E8F0' }}>
-                            <NavLink to="/calculators/payment" className="block px-4 py-3 text-sm hover:bg-gray-50 transition-colors" style={{ color: '#718096' }}>Payment Calculator</NavLink>
-                            <NavLink to="/calculators/affordability" className="block px-4 py-3 text-sm hover:bg-gray-50 transition-colors" style={{ color: '#718096' }}>Affordability Calculator</NavLink>
-                            <NavLink to="/calculators/rent-vs-buy" className="block px-4 py-3 text-sm hover:bg-gray-50 transition-colors" style={{ color: '#718096' }}>Rent vs Buy</NavLink>
-                        </div>
-                    </div>
                     <NavLink to="/blog" className={({ isActive }) => `${link} ${isActive ? active : ""}`} style={{ color: isActive => isActive ? '#8F182C' : '#718096' }}>Blog</NavLink>
                     <NavLink to="/contact" className={({ isActive }) => `${link} ${isActive ? active : ""}`} style={{ color: isActive => isActive ? '#8F182C' : '#718096' }}>Contact</NavLink>
                 </nav>
