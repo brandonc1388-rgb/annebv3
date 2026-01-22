@@ -40,7 +40,7 @@ export default function Footer() {
             <div className="relative z-10">
                 {/* Main Footer Content */}
                 <div className="max-w-6xl mx-auto px-6 py-16">
-                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Anne Brill Info */}
                         <div className="lg:col-span-2 space-y-6">
                             <div className="flex items-center gap-4">
@@ -94,22 +94,6 @@ export default function Footer() {
                             </ul>
                         </div>
 
-                        {/* Services */}
-                        <div>
-                            <h4 className="text-lg font-bold mb-6">Services</h4>
-                            <ul className="space-y-3">
-                                {services.map((service) => (
-                                    <li key={service.name}>
-                                        <a
-                                            href={service.href}
-                                            className="text-slate-300 hover:text-white transition-colors hover:underline"
-                                        >
-                                            {service.name}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
                     </div>
 
                     {/* CTA Section */}

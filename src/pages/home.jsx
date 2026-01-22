@@ -14,7 +14,9 @@ import {
     HeartIcon,
     ShieldCheckIcon,
     PhoneIcon,
-    DevicePhoneMobileIcon
+    DevicePhoneMobileIcon,
+    BuildingOfficeIcon,
+    WrenchScrewdriverIcon
 } from '@heroicons/react/24/outline';
 
 export default function Home() {
@@ -268,6 +270,24 @@ export default function Home() {
                                 gradient: "from-teal-500 to-cyan-600",
                                 bg: "from-teal-50 to-cyan-50",
                                 image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            },
+                            {
+                                IconComponent: BuildingOfficeIcon,
+                                title: "Commercial Mortgages",
+                                desc: "Financing solutions for commercial properties and business real estate investments",
+                                highlight: "Competitive Business Rates",
+                                gradient: "from-slate-500 to-gray-600",
+                                bg: "from-slate-50 to-gray-50",
+                                image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            },
+                            {
+                                IconComponent: WrenchScrewdriverIcon,
+                                title: "Industrial Mortgages",
+                                desc: "Specialized financing for warehouses, manufacturing facilities, and industrial properties",
+                                highlight: "Industrial Property Experts",
+                                gradient: "from-amber-500 to-orange-600",
+                                bg: "from-amber-50 to-orange-50",
+                                image: "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
                             }
                         ].map((service, index) => (
                             <div

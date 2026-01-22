@@ -56,7 +56,7 @@ export default function LiveStats() {
                     <p className="text-slate-300 text-lg">Live metrics from Anne's mortgage practice</p>
                 </div>
 
-                <div ref={ref} className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div ref={ref} className="grid grid-cols-3 gap-6 w-full">
                     {stats.map((stat, index) => (
                         <div
                             key={index}
