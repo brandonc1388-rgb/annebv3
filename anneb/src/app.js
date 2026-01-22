@@ -2,16 +2,16 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Layout from "./components/Layout";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Payment from "./pages/calculators/Payment";
-import Affordability from "./pages/calculators/Affordability";
-import RentVsBuy from "./pages/calculators/RentVsBuy";
-import Book from "./pages/Book";
-import PreApproval from "./pages/PreApproval";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+import Layout from "./components/layout";
+import Home from "./pages/home";
+import About from "./pages/about";
+import Payment from "./pages/calculators/payment";
+import Affordability from "./pages/calculators/affordability";
+import RentVsBuy from "./pages/calculators/rentvsbuy";
+import Book from "./pages/book";
+import PreApproval from "./pages/preapproval";
+import Blog from "./pages/blog";
+import Contact from "./pages/contact";
 
 export default function App() {
   const location = useLocation();

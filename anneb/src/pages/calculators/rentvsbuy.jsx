@@ -1,4 +1,4 @@
-import Field from "../../components/Field";
+import Field from "../../components/field";
 import { useState } from "react";
 import { fmt, mortgagePayment, principalPaidOverYears, toNumber } from "../../lib/mortgage";
 
