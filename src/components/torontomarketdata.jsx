@@ -57,7 +57,9 @@ export default function TorontoMarketData() {
                 <div className="grid md:grid-cols-3 gap-6" data-aos="zoom-in" data-aos-delay="400">
                     <div className="glass-premium rounded-2xl p-8 text-center magnetic">
                         <div className="w-16 h-16 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
-                            <span className="text-2xl">🏠</span>
+                            <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                            </svg>
                         </div>
                         <h3 className="text-sm font-bold text-gray-600 mb-2">Average Home Price</h3>
                         <p className="text-3xl font-black text-gray-900 font-display">

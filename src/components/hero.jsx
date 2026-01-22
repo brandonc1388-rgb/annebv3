@@ -1,4 +1,4 @@
-import { PhoneIcon } from '@heroicons/react/24/outline';
+import { PhoneIcon, StarIcon, TrophyIcon, BuildingLibraryIcon } from '@heroicons/react/24/solid';
 import toast from 'react-hot-toast';
 
 export default function Hero() {
@@ -39,7 +39,7 @@ export default function Hero() {
                         {/* Trust Badge */}
                         <div className="inline-flex items-center gap-3 bg-emerald-50 text-emerald-700 px-6 py-3 rounded-full text-sm font-bold border border-emerald-200 shadow-lg">
                             <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
-                            <span>50+ Premium Lenders • Licensed M08005655</span>
+                            <span>100+ Premium Lenders • Licensed M08005655</span>
                         </div>
 
                         {/* Main Headline with Premium Typography */}
@@ -66,15 +66,18 @@ export default function Hero() {
                         {/* Contact Info Pills */}
                         <div className="flex flex-wrap items-center gap-3 text-sm">
                             <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full shadow-md">
-                                <span>🏛️</span>
+                                <BuildingLibraryIcon className="w-4 h-4 text-slate-600" />
                                 <span className="font-semibold">Licensed M08005655</span>
                             </div>
                             <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full shadow-md">
-                                <span>📍</span>
+                                <svg className="w-4 h-4 text-slate-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                                </svg>
                                 <span className="font-semibold">200 Consumers Rd, Toronto</span>
                             </div>
                             <div className="flex items-center gap-2 bg-white/80 px-4 py-2 rounded-full shadow-md">
-                                <span>📞</span>
+                                <PhoneIcon className="w-4 h-4 text-slate-600" />
                                 <span className="font-semibold">(416) 289-2224</span>
                             </div>
                         </div>
@@ -111,15 +114,15 @@ export default function Hero() {
                         {/* Social Proof Indicators */}
                         <div className="flex flex-wrap items-center gap-4 pt-6 text-sm">
                             <div className="flex items-center gap-2 bg-green-50 text-green-700 px-3 py-2 rounded-full border border-green-200">
-                                <span>⭐</span>
+                                <StarIcon className="w-4 h-4" />
                                 <span className="font-bold">5.0 Google Reviews</span>
                             </div>
                             <div className="flex items-center gap-2 bg-blue-50 text-blue-700 px-3 py-2 rounded-full border border-blue-200">
-                                <span>🏆</span>
+                                <TrophyIcon className="w-4 h-4" />
                                 <span className="font-bold">Ontario's #1 Mortgage Brokers</span>
                             </div>
                             <div className="flex items-center gap-2 bg-purple-50 text-purple-700 px-3 py-2 rounded-full border border-purple-200">
-                                <span>🏦</span>
+                                <BuildingLibraryIcon className="w-4 h-4" />
                                 <span className="font-bold">Lender Network of 100+</span>
                             </div>
                         </div>

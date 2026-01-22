@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer';
+import { UsersIcon, ClockIcon, CheckCircleIcon } from '@heroicons/react/24/outline';
 
 export default function LiveStats() {
     const [ref, inView] = useInView({ threshold: 0.3, triggerOnce: true });
@@ -11,7 +12,7 @@ export default function LiveStats() {
         {
             number: 127,
             label: `Clients Helped in ${currentMonth}`,
-            icon: "👥",
+            IconComponent: UsersIcon,
             color: "text-blue-600",
             bg: "bg-blue-50",
             border: "border-blue-200"
@@ -19,24 +20,15 @@ export default function LiveStats() {
         {
             number: 24,
             label: "Average Hours to Approval",
-            icon: "⚡",
+            IconComponent: ClockIcon,
             color: "text-green-600",
             bg: "bg-green-50",
             border: "border-green-200"
         },
         {
-            number: 4.29,
-            label: "Lowest Rate This Week (%)",
-            icon: "📈",
-            color: "text-red-600",
-            bg: "bg-red-50",
-            border: "border-red-200",
-            decimals: 2
-        },
-        {
             number: 98,
             label: "Success Rate (%)",
-            icon: "🎯",
+            IconComponent: CheckCircleIcon,
             color: "text-purple-600",
             bg: "bg-purple-50",
             border: "border-purple-200"
@@ -64,7 +56,7 @@ export default function LiveStats() {
                     <p className="text-slate-300 text-lg">Live metrics from Anne's mortgage practice</p>
                 </div>
 
-                <div ref={ref} className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+                <div ref={ref} className="grid grid-cols-1 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
                     {stats.map((stat, index) => (
                         <div
                             key={index}
@@ -76,7 +68,9 @@ export default function LiveStats() {
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
 
                             <div className="relative z-10">
-                                <div className="text-5xl mb-4 animate-float">{stat.icon}</div>
+                                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
+                                    <stat.IconComponent className={`w-12 h-12 ${stat.color}`} />
+                                </div>
                                 <div className={`text-4xl font-black ${stat.color} mb-3 font-display`}>
                                     {inView && (
                                         <CountUp

@@ -1,6 +1,4 @@
 import Hero from "../components/hero";
-import StickyCTA from "../components/stickycta";
-import FloatingCTA from "../components/floatingcta";
 import LiveStats from "../components/livestats";
 import TorontoMarketData from "../components/torontomarketdata";
 import ContactForm from "../components/contactform";
@@ -52,8 +50,6 @@ export default function Home() {
     return (
         <>
             <Toaster position="top-right" />
-            <StickyCTA />
-            <FloatingCTA />
 
             {/* Premium Hero Section */}
             <Hero />
@@ -96,7 +92,10 @@ export default function Home() {
                             <div className="space-y-6">
                                 <div className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-4 py-2 rounded-full text-sm font-bold">
                                     <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-                                    <span>⭐ 5.0 Google Reviews • 1,000+ Mortgages Closed</span>
+                                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                    </svg>
+                                    <span>5.0 Google Reviews • 1,000+ Mortgages Closed</span>
                                 </div>
 
                                 <h2 className="text-5xl font-black text-slate-900 leading-tight">
@@ -165,29 +164,6 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="grid md:grid-cols-3 gap-6 mt-12">
-                        <div className="bg-white p-6 rounded-xl shadow-sm">
-                            <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <span className="text-green-600 font-bold text-xl">50+</span>
-                            </div>
-                            <h3 className="font-semibold mb-2">Lender Network</h3>
-                            <p className="text-sm text-gray-600">Access to Canada's largest network of mortgage lenders</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-sm">
-                            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <span className="text-blue-600 font-bold text-xl">24h</span>
-                            </div>
-                            <h3 className="font-semibold mb-2">Fast Approval</h3>
-                            <p className="text-sm text-gray-600">Get pre-approved within 24 hours</p>
-                        </div>
-                        <div className="bg-white p-6 rounded-xl shadow-sm">
-                            <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4 mx-auto">
-                                <span className="text-purple-600 font-bold text-xl">GTA</span>
-                            </div>
-                            <h3 className="font-semibold mb-2">Local Expert</h3>
-                            <p className="text-sm text-gray-600">Toronto and GTA market specialist</p>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -206,7 +182,9 @@ export default function Home() {
                 <div className="relative z-10 max-w-7xl mx-auto px-6">
                     <div className="text-center mb-16" data-aos="fade-up">
                         <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-bold mb-6 border border-blue-200">
-                            <span>💼</span>
+                            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
                             <span>COMPREHENSIVE SERVICES</span>
                         </div>
                         <h2 className="text-5xl font-black font-display text-gray-900 mb-6 text-shadow-lg">
@@ -315,8 +293,11 @@ export default function Home() {
                                 <div className="p-6">
                                     <h3 className="font-bold text-gray-900 mb-3 text-lg">{service.title}</h3>
                                     <p className="text-sm text-gray-600 mb-4 leading-relaxed">{service.desc}</p>
-                                    <div className="inline-flex items-center px-3 py-2 bg-green-50 text-green-700 text-xs font-bold rounded-full border border-green-200">
-                                        ✨ {service.highlight}
+                                    <div className="inline-flex items-center gap-1 px-3 py-2 bg-green-50 text-green-700 text-xs font-bold rounded-full border border-green-200">
+                                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                        </svg>
+                                        {service.highlight}
                                     </div>
                                 </div>
                             </div>
@@ -607,17 +588,6 @@ export default function Home() {
                         </div>
                     </div>
 
-                    <div className="text-center mt-12">
-                        <p className="text-gray-600 mb-6">Ready to join these satisfied clients?</p>
-                        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                            <a href="tel:4162892224" className="px-8 py-4 bg-white text-red-600 font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center border-2 border-red-600">
-                                📞 Call (416) 289-2224
-                            </a>
-                            <a href="/pre-approval" className="px-8 py-4 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200" style={{ backgroundColor: 'var(--primary)' }}>
-                                Get Pre-Approved Today
-                            </a>
-                        </div>
-                    </div>
                 </div>
             </section>
 
