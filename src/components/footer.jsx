@@ -43,16 +43,9 @@ export default function Footer() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {/* Anne Brill Info */}
                         <div className="lg:col-span-2 space-y-6">
-                            <div className="flex items-center gap-4">
-                                <img
-                                    src="/images/centum-logo.jpg"
-                                    alt="CENTUM Financial Group"
-                                    className="h-12 w-auto"
-                                />
-                                <div>
-                                    <h3 className="text-xl font-bold">Anne Brill</h3>
-                                    <p className="text-slate-300">Licensed Mortgage Agent M08005655</p>
-                                </div>
+                            <div>
+                                <h3 className="text-xl font-bold">Anne Brill</h3>
+                                <p className="text-slate-300">Licensed Mortgage Agent M08005655</p>
                             </div>
 
                             <p className="text-slate-300 leading-relaxed max-w-md">
