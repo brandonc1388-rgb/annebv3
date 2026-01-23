@@ -49,9 +49,6 @@ export default function Hero() {
 
                         {/* Compelling Subtitle with Enhanced Typography */}
                         <div className="space-y-6">
-                            <p className="text-2xl md:text-3xl font-light leading-relaxed text-shadow-lg" style={{ color: '#718096' }}>
-                                Get <span className="font-bold" style={{ color: '#2D3748' }}>pre-approved in 24 hours</span> with competitive rates and expert guidance.
-                            </p>
                             <p className="text-xl leading-relaxed max-w-xl font-medium" style={{ color: '#718096' }}>
                                 Professional guidance through every step. <strong style={{ color: '#2D3748' }}>Over 1,000 successful mortgages closed</strong> across the GTA.
                             </p>
