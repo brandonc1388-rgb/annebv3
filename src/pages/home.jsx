@@ -1,7 +1,6 @@
 import Hero from "../components/hero";
 import LiveStats from "../components/livestats";
 import TorontoMarketData from "../components/torontomarketdata";
-import ContactForm from "../components/contactform";
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
@@ -414,10 +413,15 @@ export default function Home() {
                                     </svg>
                                 ))}
                             </div>
-                            <div className="bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-lg border border-yellow-200">
+                            <a
+                                href="https://www.google.com/search?sca_esv=fd565832262b37c0&rlz=1C5OZZY_enCA1169CA1177&sxsrf=ANbL-n6oOB2qeqWq0pxAJ4ZQhnDDS6UAVA:1769126220799&si=AL3DRZEsmMGCryMMFSHJ3StBhOdZ2-6yYkXd_doETEE1OR-qOUCL8_Q2a1EXM5Hf6vOTG_ZyCPMKcWJ2ektnNvnY2grxBnMCNvbo_PfU2EVyUH5MsToGrT9k4LpADk6E4FHxx-okH5al6rIrhLKT1MeTTyyRM0ykRp0jamuMzSF3xkGNzudMaq0dSNtsvJ7pOD_pvMdb92tTwEZzaR7d1MuLqVQ13dP3Ew%3D%3D&q=Centum+Financial+Services+Limited+Partnership+License+%2313054+Team+Anne+Brill+Reviews&sa=X&ved=2ahUKEwj5itDfrKCSAxVUwvACHYadJ78Q0bkNegQINxAH&biw=1470&bih=798&dpr=2&aic=0"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="bg-white/90 backdrop-blur-md px-6 py-3 rounded-full shadow-lg border border-yellow-200 hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer"
+                            >
                                 <span className="text-2xl font-black bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">5.0</span>
                                 <span className="text-gray-600 font-bold ml-2">• Google Reviews</span>
-                            </div>
+                            </a>
                         </div>
                     </div>
 
@@ -637,10 +641,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-
-            {/* Contact Form */}
-            <ContactForm />
 
         </>
     );
