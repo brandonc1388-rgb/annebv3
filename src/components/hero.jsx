@@ -76,7 +76,7 @@ export default function Hero() {
                         {/* Premium CTA Buttons with Magnetic Effects */}
                         <div className="flex flex-col sm:flex-row gap-4 pt-6">
                             <a
-                                href="/pre-approval"
+                                href="/contact"
                                 className="group relative btn-premium inline-flex items-center justify-center px-10 py-5 text-xl font-black text-white rounded-2xl shadow-2xl hover:shadow-3xl magnetic overflow-hidden font-display"
                                 onClick={handleRateQuoteClick}
                             >

@@ -34,7 +34,7 @@ export default function Nav() {
                     <NavLink to="/contact" className={({ isActive }) => `${link} ${isActive ? active : ""}`} style={{ color: isActive => isActive ? '#8F182C' : '#718096' }}>Contact</NavLink>
                 </nav>
 
-                <a href="/pre-approval" className="hidden md:inline-flex px-6 py-2 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200" style={{ backgroundColor: '#8F182C' }}>Get Pre-Approved</a>
+                <a href="/contact" className="hidden md:inline-flex px-6 py-2 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200" style={{ backgroundColor: '#8F182C' }}>Get Pre-Approved</a>
             </div>
         </header>
     );
