@@ -51,7 +51,7 @@ export default function About() {
                                 <img
                                     src="/images/img_1849 copy.jpeg"
                                     alt="Anne Brill - Licensed Mortgage Agent"
-                                    className="relative w-full h-80 rounded-2xl shadow-2xl object-cover"
+                                    className="relative w-full h-[32rem] rounded-2xl shadow-2xl object-cover"
                                 />
                             </div>
                         </div>
