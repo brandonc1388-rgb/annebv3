@@ -49,7 +49,7 @@ export default function About() {
                             <div className="relative">
                                 <div className="absolute -inset-4 bg-gradient-to-r from-red-200/40 to-pink-200/40 rounded-3xl blur-2xl"></div>
                                 <img
-                                    src="/images/anne-brill.jpg"
+                                    src="/images/img_1849 copy.jpeg"
                                     alt="Anne Brill - Licensed Mortgage Agent"
                                     className="relative w-full h-96 rounded-2xl shadow-2xl object-cover"
                                 />

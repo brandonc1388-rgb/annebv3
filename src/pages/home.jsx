@@ -76,7 +76,7 @@ export default function Home() {
                             <div className="absolute -inset-6 bg-gradient-to-r from-red-200/40 to-pink-200/40 rounded-3xl opacity-60 blur-2xl"></div>
                             <div className="relative bg-white/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-white/50 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                                 <img
-                                    src="/images/anne-brill.jpg"
+                                    src="/images/img_1848.jpeg"
                                     alt="Anne Brill - Licensed Mortgage Agent"
                                     className="w-full h-96 rounded-2xl shadow-xl object-cover hover:scale-105 transition-transform duration-500"
                                 />
