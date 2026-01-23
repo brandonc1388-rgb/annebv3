@@ -15,6 +15,11 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50">
+            {/* Spline 3D Background */}
+            <div className="absolute inset-0 opacity-30">
+                <spline-viewer url="https://prod.spline.design/XgmScMTReDSVKYAU/scene.splinecode"></spline-viewer>
+            </div>
+
             {/* Subtle Floating Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-full blur-3xl animate-pulse"></div>
