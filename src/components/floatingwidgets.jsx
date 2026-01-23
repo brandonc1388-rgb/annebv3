@@ -22,11 +22,11 @@ export default function FloatingWidgets() {
     ];
 
     return (
-        <div className="fixed right-6 z-50">
+        <>
             {widgets.map((widget) => (
                 <div
                     key={widget.id}
-                    className={`absolute ${widget.position} group`}
+                    className={`fixed right-6 ${widget.position} z-50 group`}
                     onMouseEnter={() => setHoveredWidget(widget.id)}
                     onMouseLeave={() => setHoveredWidget(null)}
                 >
@@ -56,6 +56,6 @@ export default function FloatingWidgets() {
                     </a>
                 </div>
             ))}
-        </div>
+        </>
     );
 }
