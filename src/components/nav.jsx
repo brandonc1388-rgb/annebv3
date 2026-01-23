@@ -18,7 +18,7 @@ export default function Nav() {
                             e.target.nextSibling.style.display = 'flex';
                         }}
                     />
-                    <div className="size-10 rounded-xl bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg" style={{ display: 'none' }}>
+                    <div className="size-10 rounded-xl flex items-center justify-center shadow-lg" style={{ display: 'none', backgroundColor: '#8F182C' }}>
                         <span className="text-white font-black text-lg">C</span>
                     </div>
                     <div className="leading-tight">

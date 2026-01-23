@@ -1,6 +1,7 @@
 import Hero from "../components/hero";
 import LiveStats from "../components/livestats";
 import TorontoMarketData from "../components/torontomarketdata";
+import ContactForm from "../components/contactform";
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
@@ -641,6 +642,9 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            {/* Contact Form */}
+            <ContactForm />
 
         </>
     );

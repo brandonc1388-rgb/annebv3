@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Nav from "./nav";
 import Footer from "./footer";
+import FloatingWidgets from "./floatingwidgets";
 
 export default function Layout() {
     return (
@@ -10,6 +11,7 @@ export default function Layout() {
                 <Outlet />
             </main>
             <Footer />
+            <FloatingWidgets />
         </>
     );
 }
