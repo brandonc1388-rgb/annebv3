@@ -27,7 +27,7 @@ export default function Hero() {
             </div>
 
             <div className="relative z-10 max-w-7xl mx-auto px-6 py-20">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-16 items-start">
                     {/* Left Column - Content */}
                     <div className="space-y-8">
                         {/* Trust Badge */}
