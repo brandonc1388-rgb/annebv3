@@ -45,7 +45,7 @@ export default function FloatingWidgets() {
                         href={widget.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center justify-center w-16 h-16 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110 border-4 border-white"
+                        className="flex items-center justify-center w-16 h-16 rounded-full shadow-2xl hover:shadow-3xl transition-all duration-300 hover:scale-110"
                         style={{ backgroundColor: '#8F182C' }}
                     >
                         {widget.icon === 'calculator' ? (

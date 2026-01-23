@@ -127,6 +127,14 @@ export default function Hero() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Right Column - 3D Spline Viewer */}
+                    <div className="hidden lg:block relative h-[600px]">
+                        <spline-viewer
+                            url="https://prod.spline.design/XgmScMTReDSVKYAU/scene.splinecode"
+                            className="w-full h-full"
+                        ></spline-viewer>
+                    </div>
                 </div>
             </div>
         </section>
