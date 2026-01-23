@@ -15,6 +15,11 @@ export default function Hero() {
 
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50">
+            {/* Spline 3D Background */}
+            <div className="absolute inset-0 opacity-30">
+                <spline-viewer url="https://prod.spline.design/XgmScMTReDSVKYAU/scene.splinecode"></spline-viewer>
+            </div>
+
             {/* Subtle Floating Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-full blur-3xl animate-pulse"></div>
@@ -117,12 +122,15 @@ export default function Hero() {
                         </div>
                     </div>
 
-                    {/* Right Column - 3D Spline Viewer */}
-                    <div className="hidden lg:block relative h-[600px]">
-                        <spline-viewer
-                            url="https://prod.spline.design/XgmScMTReDSVKYAU/scene.splinecode"
-                            className="w-full h-full"
-                        ></spline-viewer>
+                    {/* Right Column - Profile Image */}
+                    <div className="hidden lg:block relative" data-aos="fade-left">
+                        <div className="relative bg-white/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-white/50 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
+                            <img
+                                src="/images/img_1849.jpeg"
+                                alt="Anne Brill - Mortgage Specialist"
+                                className="w-full h-96 rounded-2xl shadow-xl object-cover hover:scale-105 transition-transform duration-500"
+                            />
+                        </div>
                     </div>
                 </div>
             </div>
