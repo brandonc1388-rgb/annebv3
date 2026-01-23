@@ -126,9 +126,9 @@ export default function Hero() {
                     <div className="hidden lg:block relative" data-aos="fade-left">
                         <div className="relative bg-white/90 backdrop-blur-md p-8 rounded-3xl shadow-2xl border border-white/50 hover:shadow-3xl transition-all duration-500 transform hover:-translate-y-2">
                             <img
-                                src="/images/img_1849.jpeg"
+                                src="/images/img_1847.jpeg"
                                 alt="Anne Brill - Mortgage Specialist"
-                                className="w-full h-96 rounded-2xl shadow-xl object-cover hover:scale-105 transition-transform duration-500"
+                                className="w-full h-[600px] rounded-2xl shadow-xl object-cover object-center hover:scale-105 transition-transform duration-500"
                             />
                         </div>
                     </div>
