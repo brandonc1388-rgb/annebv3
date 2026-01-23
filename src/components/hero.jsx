@@ -14,18 +14,7 @@ export default function Hero() {
     };
 
     return (
-        <section className="relative min-h-screen flex items-center overflow-hidden">
-            {/* Hero Background Image */}
-            <div className="absolute inset-0">
-                <img
-                    src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80"
-                    alt="Modern Toronto Home"
-                    className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/75"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 via-transparent to-blue-100/60"></div>
-            </div>
-
+        <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50">
             {/* Subtle Floating Elements */}
             <div className="absolute inset-0 overflow-hidden">
                 <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-red-100/20 to-pink-100/20 rounded-full blur-3xl animate-pulse"></div>
