@@ -16,8 +16,8 @@ export default function Hero() {
     return (
         <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-white via-slate-50 to-blue-50 lg:bg-none">
             <div
-                className="absolute inset-0 lg:hidden bg-cover bg-center bg-no-repeat"
-                style={{ backgroundImage: "url('/images/img_1847 copy.jpeg')" }}
+                className="absolute inset-0 lg:hidden bg-cover bg-no-repeat"
+                style={{ backgroundImage: "url('/images/img_1847 copy.jpeg')", backgroundPosition: '65% center' }}
             >
                 <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95"></div>
             </div>
