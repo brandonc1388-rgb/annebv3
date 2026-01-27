@@ -19,7 +19,7 @@ export default function Hero() {
                 className="absolute inset-0 lg:hidden bg-cover bg-no-repeat"
                 style={{ backgroundImage: "url('/images/img_1847 copy.jpeg')", backgroundPosition: '25% center' }}
             >
-                <div className="absolute inset-0 bg-gradient-to-b from-white/95 via-white/85 to-white/95"></div>
+                <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-white/80 to-white/90"></div>
             </div>
 
             <div className="hidden lg:block absolute inset-0 overflow-hidden">
