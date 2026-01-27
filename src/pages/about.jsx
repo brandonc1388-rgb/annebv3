@@ -29,36 +29,36 @@ export default function About() {
                     <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-800/80 to-slate-900/90"></div>
                 </div>
 
-                <div className="relative z-10 max-w-6xl mx-auto px-6 text-center text-white">
+                <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-6 text-center text-white">
                     <div data-aos="fade-up">
-                        <h1 className="text-5xl md:text-6xl font-black font-display mb-6 text-shadow-xl">
+                        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black font-display mb-4 md:mb-6 text-shadow-xl">
                             About <span className="bg-gradient-to-r from-red-400 to-pink-400 bg-clip-text text-transparent">Anne Brill</span>
                         </h1>
-                        <p className="text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed">
-                            Toronto's trusted mortgage specialist with over a decade of experience helping families achieve their homeownership dreams
+                        <p className="text-lg md:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed">
+                            Toronto's trusted mortgage specialist helping families achieve their homeownership dreams
                         </p>
                     </div>
                 </div>
             </section>
 
             {/* Personal Story */}
-            <section className="py-24 bg-gradient-to-br from-slate-50 to-blue-50">
-                <div className="max-w-6xl mx-auto px-6">
-                    <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <section className="py-12 md:py-24 bg-gradient-to-br from-slate-50 to-blue-50">
+                <div className="max-w-6xl mx-auto px-4 md:px-6">
+                    <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                         <div data-aos="fade-right">
                             <div className="relative">
                                 <div className="absolute -inset-4 bg-gradient-to-r from-red-200/40 to-pink-200/40 rounded-3xl blur-2xl"></div>
                                 <img
                                     src="/images/img_1849 copy.jpeg"
                                     alt="Anne Brill - Licensed Mortgage Agent"
-                                    className="relative w-full h-[32rem] rounded-2xl shadow-2xl object-cover"
+                                    className="relative w-full h-64 md:h-80 lg:h-[32rem] rounded-2xl shadow-2xl object-cover"
                                 />
                             </div>
                         </div>
 
-                        <div className="space-y-8" data-aos="fade-left">
+                        <div className="space-y-6 md:space-y-8" data-aos="fade-left">
                             <div>
-                                <h2 className="text-4xl font-black font-display text-gray-900 mb-6">
+                                <h2 className="text-3xl md:text-4xl font-black font-display text-gray-900 mb-4 md:mb-6">
                                     My <span className="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">Story</span>
                                 </h2>
                                 <div className="space-y-4 text-lg text-gray-600 leading-relaxed">
@@ -79,14 +79,14 @@ export default function About() {
                             </div>
 
                             {/* Quick Stats */}
-                            <div className="grid grid-cols-2 gap-6">
-                                <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                                    <div className="text-3xl font-black text-red-600 font-display">1000+</div>
-                                    <p className="text-sm font-bold text-gray-600">Mortgages Closed</p>
+                            <div className="grid grid-cols-2 gap-4 md:gap-6">
+                                <div className="text-center p-4 md:p-6 bg-white rounded-2xl shadow-lg">
+                                    <div className="text-2xl md:text-3xl font-black text-red-600 font-display">1000+</div>
+                                    <p className="text-xs md:text-sm font-bold text-gray-600">Mortgages Closed</p>
                                 </div>
-                                <div className="text-center p-6 bg-white rounded-2xl shadow-lg">
-                                    <div className="text-3xl font-black text-green-600 font-display">98%</div>
-                                    <p className="text-sm font-bold text-gray-600">Approval Rate</p>
+                                <div className="text-center p-4 md:p-6 bg-white rounded-2xl shadow-lg">
+                                    <div className="text-2xl md:text-3xl font-black text-green-600 font-display">98%</div>
+                                    <p className="text-xs md:text-sm font-bold text-gray-600">Approval Rate</p>
                                 </div>
                             </div>
                         </div>

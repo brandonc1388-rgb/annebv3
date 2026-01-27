@@ -52,15 +52,15 @@ export default function LiveStats() {
                         <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
                         <span>LIVE DASHBOARD</span>
                     </div>
-                    <h2 className="text-4xl font-black font-display mb-4 text-shadow-xl">Real-Time Performance</h2>
+                    <h2 className="text-2xl md:text-4xl font-black font-display mb-4 text-shadow-xl">Real-Time Performance</h2>
                     <p className="text-slate-300 text-lg">Live metrics from Anne's mortgage practice</p>
                 </div>
 
-                <div ref={ref} className="grid grid-cols-3 gap-6 w-full">
+                <div ref={ref} className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 w-full">
                     {stats.map((stat, index) => (
                         <div
                             key={index}
-                            className={`group relative ${stat.bg} rounded-2xl p-8 text-center transform hover:scale-105 transition-all duration-500 shadow-xl hover:shadow-2xl border-2 ${stat.border} magnetic overflow-hidden`}
+                            className={`group relative ${stat.bg} rounded-2xl p-6 md:p-8 text-center transform hover:scale-105 transition-all duration-500 shadow-xl hover:shadow-2xl border-2 ${stat.border} magnetic overflow-hidden`}
                             data-aos="zoom-in"
                             data-aos-delay={index * 150}
                         >
@@ -68,10 +68,10 @@ export default function LiveStats() {
                             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-shimmer"></div>
 
                             <div className="relative z-10">
-                                <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                                    <stat.IconComponent className={`w-12 h-12 ${stat.color}`} />
+                                <div className="w-12 h-12 md:w-16 md:h-16 mx-auto mb-3 md:mb-4 flex items-center justify-center">
+                                    <stat.IconComponent className={`w-8 h-8 md:w-12 md:h-12 ${stat.color}`} />
                                 </div>
-                                <div className={`text-4xl font-black ${stat.color} mb-3 font-display`}>
+                                <div className={`text-3xl md:text-4xl font-black ${stat.color} mb-2 md:mb-3 font-display`}>
                                     {inView && (
                                         <CountUp
                                             end={stat.number}

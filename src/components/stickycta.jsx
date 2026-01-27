@@ -10,16 +10,16 @@ export default function StickyCTA() {
                     <div className="flex gap-2">
                         <a
                             href="tel:4162892224"
-                            className="flex items-center gap-1 px-4 py-2 text-white font-bold rounded-xl shadow-lg text-sm transform hover:scale-105 transition-transform"
+                            className="flex items-center gap-1.5 px-4 py-3 text-white font-bold rounded-xl shadow-lg text-sm transform hover:scale-105 transition-transform min-h-[44px]"
                             style={{ backgroundColor: 'var(--primary)' }}
                         >
-                            📞 Call
+                            Call
                         </a>
                         <a
                             href="/pre-approval"
-                            className="flex items-center gap-1 px-4 py-2 border-2 border-red-600 text-red-600 font-bold rounded-xl text-sm transform hover:scale-105 transition-transform hover:bg-red-50"
+                            className="flex items-center gap-1.5 px-4 py-3 border-2 border-red-600 text-red-600 font-bold rounded-xl text-sm transform hover:scale-105 transition-transform hover:bg-red-50 min-h-[44px]"
                         >
-                            🚀 Apply
+                            Apply
                         </a>
                     </div>
                 </div>

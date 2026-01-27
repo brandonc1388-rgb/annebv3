@@ -78,7 +78,7 @@ export default function Home() {
                                 <img
                                     src="/images/img_1848.jpeg"
                                     alt="Anne Brill - Licensed Mortgage Agent"
-                                    className="w-full h-96 rounded-2xl shadow-xl object-cover hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-64 md:h-80 lg:h-96 rounded-2xl shadow-xl object-cover hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-red-500 to-pink-500 text-white p-4 rounded-2xl shadow-xl">
                                     <div className="text-center">
@@ -100,7 +100,7 @@ export default function Home() {
                                     <span>5.0 Google Reviews • 1,000+ Mortgages Closed</span>
                                 </div>
 
-                                <h2 className="text-5xl font-black text-slate-900 leading-tight">
+                                <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-slate-900 leading-tight">
                                     Meet <span className="bg-gradient-to-r from-red-600 to-pink-600 bg-clip-text text-transparent">Anne Brill</span>
                                 </h2>
 
@@ -144,24 +144,24 @@ export default function Home() {
                             </div>
 
                             {/* ANIMATED STATISTICS */}
-                            <div ref={statsRef} className="grid grid-cols-3 gap-6 pt-8" data-aos="zoom-in">
+                            <div ref={statsRef} className="grid grid-cols-3 gap-3 md:gap-6 pt-6 md:pt-8" data-aos="zoom-in">
                                 <div className="text-center">
-                                    <div className="text-4xl font-black text-red-600">
+                                    <div className="text-2xl md:text-4xl font-black text-red-600">
                                         {statsInView && <CountUp end={1000} duration={2.5} />}+
                                     </div>
-                                    <p className="text-sm font-bold text-slate-600">Mortgages Closed</p>
+                                    <p className="text-xs md:text-sm font-bold text-slate-600">Mortgages Closed</p>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-4xl font-black text-green-600">
+                                    <div className="text-2xl md:text-4xl font-black text-green-600">
                                         {statsInView && <CountUp end={98} duration={2.5} />}%
                                     </div>
-                                    <p className="text-sm font-bold text-slate-600">Approval Rate</p>
+                                    <p className="text-xs md:text-sm font-bold text-slate-600">Approval Rate</p>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-4xl font-black text-blue-600">
+                                    <div className="text-2xl md:text-4xl font-black text-blue-600">
                                         {statsInView && <CountUp end={24} duration={2.5} />}h
                                     </div>
-                                    <p className="text-sm font-bold text-slate-600">Avg Approval Time</p>
+                                    <p className="text-xs md:text-sm font-bold text-slate-600">Avg Approval Time</p>
                                 </div>
                             </div>
                         </div>
@@ -189,8 +189,8 @@ export default function Home() {
                             </svg>
                             <span>COMPREHENSIVE SERVICES</span>
                         </div>
-                        <h2 className="text-5xl font-black font-display text-gray-900 mb-6 text-shadow-lg">
-                            Complete <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Mortgage Solutions</span>
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black font-display text-gray-900 mb-6 text-shadow-lg">
+                            Complete <span className="bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">Mortgage Solutions</span>
                         </h2>
                         <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
                             From first-time buyers to complex commercial deals, I provide expert guidance for every mortgage need across the GTA
@@ -402,7 +402,7 @@ export default function Home() {
 
                 <div className="relative z-10 max-w-6xl mx-auto px-6">
                     <div className="text-center mb-16" data-aos="fade-up">
-                        <h2 className="text-5xl font-black text-gray-900 mb-6">
+                        <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 mb-6">
                             What My <span className="bg-gradient-to-r from-yellow-600 to-orange-600 bg-clip-text text-transparent">Clients Say</span>
                         </h2>
                         <p className="text-xl text-gray-600 mb-8">Real reviews from satisfied clients across the GTA</p>
